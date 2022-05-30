@@ -28,7 +28,7 @@ or pick a specific module you want to learn more about.
 
 Before starting this course, you should know about HTML. 
 For those new to web development, 
-check out the [learn HTML](../html) to learn all about how to write markup.
+check out the [learn HTML](/learn/html) to learn all about how to write markup.
 
 ## Demos
 

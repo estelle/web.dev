@@ -31,7 +31,7 @@ You can go through the series from start to finish
 to get a general understanding of CSS from top to bottom,
 or you can use it as a reference for specific styling subjects.
 For those new to web development overall, check out the
-[Learn HTML](../html) to learn all about how to write markup and link your stylesheets.
+[Learn HTML](/learn/html) to learn all about how to write markup and link your stylesheets.
 
 Here's what you'll learn:
 
