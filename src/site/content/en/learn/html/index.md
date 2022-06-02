@@ -14,13 +14,13 @@ tags:
 
 Welcome to HTML!  Hypertext Markup Language, or HTML, is the backbone of the web, providing the content, as well as the structure of that content, you see displayed in your web browser. 
 
-Unless you’re reading a PDF or other printed version of this page, this content is made up of various HTML elements and text. HTML is the content layer of the web. HTML elements are the nodes that make up the [Document Object Model](). 
+Unless you're reading a PDF or other printed version of this page, this content is made up of various HTML elements and text. HTML is the content layer of the web. HTML elements are the nodes that make up the [Document Object Model](). 
 
-[Cascading Style Sheets](/learn/css) provide the look and feel, or presentation. [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript) is the behavior layer, often used to manipulate the objects within a document. Sites that are built with JavaScript frameworks are really just manipulating HTML. In turn, it’s important to markup your HTML in a way that scripts can easily parse and assistive technologies can easily understand. This means writing HTML code with modern standards.
+[Cascading Style Sheets](/learn/css) provide the look and feel, or presentation. [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript) is the behavior layer, often used to manipulate the objects within a document. Sites that are built with JavaScript frameworks are really just manipulating HTML. In turn, it's important to markup your HTML in a way that scripts can easily parse and assistive technologies can easily understand. This means writing HTML code with modern standards.
 
 ## This HTML course
 
-This HTML course for web developers provides a solid overview for developers from novice to expert level HTML.  If you’re completely new to HTML, you will learn how to build structurally sound content. If you’ve been building websites for years, this course may fill in gaps in knowledge that you didn’t even know you had.
+This HTML course for web developers provides a solid overview for developers from novice to expert level HTML.  If you're completely new to HTML, you will learn how to build structurally sound content. If you've been building websites for years, this course may fill in gaps in knowledge that you didn't even know you had.
 
 Along this journey, we will be building the structure for [MachineLearningWorkshop.com](https://machinelearningworkshop.com). No machines were harmed in the creation of this series.
 
