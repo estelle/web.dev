@@ -17,12 +17,12 @@ There are several categories of elements, including metadata, sectioning, text, 
 
 HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. HTML elements are delineated by tags, written using angle brackets. 
 
-Our page title is a heading, level one, for which we use the `<h1>` tag. The actual title, “Machine Learning Workshop” is the content of our element. The content goes between the open and closing tags. The entire thing–the opening tag, closing tag, content, and the content–is the element.
+Our page title is a heading, level one, for which we use the `<h1>` tag. The actual title, “Machine Learning Workshop" is the content of our element. The content goes between the open and closing tags. The entire thing–the opening tag, closing tag, content, and the content–is the element.
 
 
 The closing tag is the same tag as the opening tag, but preceded by a slash.
 
-Elements and tags aren't the exact same thing, though many people use the terms interchangeably. The tag is the content in the brackets. In this case, the `<h1>`. An “element” is the opening and closing tag and all the content between those tags, including nested elements.
+Elements and tags aren't the exact same thing, though many people use the terms interchangeably. The tag is the content in the brackets. In this case, the `<h1>`. An “element" is the opening and closing tag and all the content between those tags, including nested elements.
 
 ```html
 <p>This paragraph has some <strong><em>strongly emphasized</em></strong> content</p>
@@ -43,13 +43,13 @@ HTML is very, very forgiving. For example, if we omitted a closing </ul> or `</l
 
 While legal to not close an `<li>`, this isn't good practice.  The closing `</ul>` is mandatory. The browser will try to determine where your list and list items ended, but you might not agree with the decision. 
 
-The specifications list whether the closing tag is mandatory or not. “Neither tag is omissible” in the specification means both an opening tag and a closing tag are required. 
+The specifications list whether the closing tag is mandatory or not. “Neither tag is omissible" in the specification means both an opening tag and a closing tag are required. 
 
 Had the `<em>` or `<strong>` above not been closed, the browser may or may not close the element for you. Not closing an `<em>` simply leads to content possibly being rendered differently than you intended. Not closing some tags, like `<script>`, `<style>`, `<template>`, `<textarea>` and `<title>`, breaks subsequent content. 
 
 Having some content unintendingly being italic won't destroy your business. Having most of your content appear unstyled in a 200x300 textarea becasue you forgot a `</textarea>` or not show up at all because you forgot to close a `</style>` makes the site unusable.
 
-Sometimes elements are there even if the tags aren't. Because elements can be implied, an element can exist even when the tags don't. The browser will add a `<body>` tag even if you don't. That being said, while it is “legal” to omit tags, don't. Also, as mentioned above, make sure they are correctly nested. Your future-self as a maintainer of markup will thank you.
+Sometimes elements are there even if the tags aren't. Because elements can be implied, an element can exist even when the tags don't. The browser will add a `<body>` tag even if you don't. That being said, while it is “legal" to omit tags, don't. Also, as mentioned above, make sure they are correctly nested. Your future-self as a maintainer of markup will thank you.
 
 The element you choose, and therefore the tags you use, should be appropriate for the content you are displaying as tags have semantic meaning. The [semantics](SECTION LINK), or `role`, of an element is important to assistive technologies and, in some cases, search engines.  
 
@@ -64,26 +64,26 @@ The paragraph and header above are both non-replaced. Non-replaced elements have
 Replaced elements, like `<img>` and `<input>`, are replaced by non-text content; an image and a graphical user interface object for these two elements, respectively.  
 
 ```html
-<input type=”range”>
+<input type="range">
 <img src="switch.svg" alt="light switch">
 ```
 —
 Output of the above HTML:
-<input type=”range”>
+<input type="range">
 <img src="https://machinelearningworkshop.com/svg/switch2.svg" alt="light switch" height="100">
 —
 
 Replaced elements are all self-closing elements and are represented by one tag. This means there is no such thing as a closing tag for a replaced element. Optionally, you can include a slash at the of the tag, which many people find makes markup easier to read:
 
 ```html
-<input type=”range”/>
+<input type="range"/>
 <img src="switch.svg" alt="light switch"/>
 ```
-Replaced elements are all “void elements”, bit not all void elements are replaced. Void elements  can not contain text content or nested elements. Void elements include  `<area>`, `<base>`, `<br>`, `<col>`, `<embed>`, `<hr>`, `<img>`, `<input>`, `<link>`, `<meta>`, `<source>`, `<track>`, and `<wbr>`. The slash at the end is old school: it's a way of indicating that the element is self-closing and there will be not matched end or closing tag. Why have a void element, which can't have any content, that isn't replaced and thereby doesn't render anything to the screen? To provide information about the content! The information is provided by the elements' attributes.
+Replaced elements are all “void elements", bit not all void elements are replaced. Void elements  can not contain text content or nested elements. Void elements include  `<area>`, `<base>`, `<br>`, `<col>`, `<embed>`, `<hr>`, `<img>`, `<input>`, `<link>`, `<meta>`, `<source>`, `<track>`, and `<wbr>`. The slash at the end is old school: it's a way of indicating that the element is self-closing and there will be not matched end or closing tag. Why have a void element, which can't have any content, that isn't replaced and thereby doesn't render anything to the screen? To provide information about the content! The information is provided by the elements' attributes.
 
 ## Attributes
 
-You may have noticed the `<img>` and `<input`> examples had more than just the element type in their opening tag. These extra bits of space-separated name/value pairs are called “attributes.” Attributes are what make HTML so incredibly powerful. We'll be covering hundreds of attribute and attribute values in this series, but here we'll just discuss what they are in general and how to include them.
+You may have noticed the `<img>` and `<input`> examples had more than just the element type in their opening tag. These extra bits of space-separated name/value pairs are called “attributes." Attributes are what make HTML so incredibly powerful. We'll be covering hundreds of attribute and attribute values in this series, but here we'll just discuss what they are in general and how to include them.
 
 Attributes provide information about the element. The attribute, like the rest of the tag, won't appear in the content, but they do help define how the content will appear to both your sighted and non-sighted (assistive technologies and search engines) users. 
 
@@ -91,7 +91,7 @@ Attributes only appear in the opening tag. The opening tag starts with the eleme
 
 
 
-In this example, we have an anchor link with two attributes . These two attributes have converted the content “Registration” into an internal anchor link.  When it is clicked, tapped, or activated with the keyboard or other device, the element with the attribute `id=”register'` in its opening tag will scroll into view . 
+In this example, we have an anchor link with two attributes . These two attributes have converted the content “Registration" into an internal anchor link.  When it is clicked, tapped, or activated with the keyboard or other device, the element with the attribute `id="register'` in its opening tag will scroll into view . 
 
 Attributes define the behavior, linkages, and functionality of elements. We'll cover more attributes in the [Attribute](LINK) section of this series. For right now, just note that some attributes are global - meaning they can appear within any element's opening tag - some apply only to some elements, and yet others are element specific relevant only to a single element. 
 
@@ -108,7 +108,7 @@ HTML is not case-sensitive, but some attribute values are. Values that are not d
 
 Note that if an attribute value is case sensitive in HTML, it is case sensitive when used in an [attribute selector](ATTRIBUTE SELECTOR).
 
-To make markup easier to read, it is recommended, but not required, to mark up your HTML using lowercase letters for all your element names and attribute names within your tags, and quote all attribute values.  If you ever hear the term “XHTML style markup”, this, and self closing empty elements with a slash at the end, is what that means. 
+To make markup easier to read, it is recommended, but not required, to mark up your HTML using lowercase letters for all your element names and attribute names within your tags, and quote all attribute values.  If you ever hear the term “XHTML style markup", this, and self closing empty elements with a slash at the end, is what that means. 
 
 ## Appearance of Elements
 
